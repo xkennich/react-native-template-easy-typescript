@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {SafeAreaView, StatusBar} from 'react-native';
 import {Provider} from 'react-redux';
 import {ThemeProvider} from 'styled-components';
+import codePush from 'react-native-code-push';
+import {useCodePush} from './hooks/useCodePush';
 import store from './store';
 import * as theme from './theme';
 
@@ -9,6 +11,11 @@ import * as theme from './theme';
 import Routes from 'src/navigation';
 
 const App = () => {
+  const syncCode = useCodePush()
+  useEffect(() => {
+    syncCode()
+  }, [])
+
   return (
     <Provider store={store}>
       <ThemeProvider theme={theme}>
@@ -21,4 +28,8 @@ const App = () => {
   );
 };
 
-export default App;
+const codePushOptions = {
+  checkFrequency: codePush.CheckFrequency.MANUAL,
+};
+
+export default codePush(codePushOptions)(App);
