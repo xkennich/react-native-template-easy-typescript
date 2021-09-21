@@ -1,0 +1,8 @@
+{
+  "name": "react-native-template-easy-typescript",
+  "version": "0.0.1",
+  "description": "React Native Easy TypeScript Template",
+  "repository": "git@github.com:xkennich/react-native-template-easy-typescript.git",
+  "author": "Timofey Sherbakov <xkennich@gmail.com>",
+  "license": "MIT"
+}
