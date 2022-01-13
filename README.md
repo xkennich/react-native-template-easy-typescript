@@ -1,7 +1,7 @@
 ## Usage
 
 ```sh
-npx react-native init MyApp --template easy-typescript
+react-native init MyApp --template easy-typescript
 ```
 
 ### before init
