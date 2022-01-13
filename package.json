@@ -1,6 +1,6 @@
 {
   "name": "react-native-template-easy-typescript",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "React Native Easy TypeScript Template",
   "repository": "git@github.com:xkennich/react-native-template-easy-typescript.git",
   "author": "Timofey Sherbakov <xkennich@gmail.com>, Titov Roman <pointlook987@gmail.com>",
